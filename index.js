@@ -17,7 +17,7 @@ function pcPlay() {
   $(".b" + randNum).addClass("pressed");
   setTimeout(function() {
     $(".b" + randNum).removeClass("pressed")
-  }, 200);
+  }, 500);
   console.log(pc);
 }
 
