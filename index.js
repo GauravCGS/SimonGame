@@ -14,7 +14,7 @@ $(document).keydown(function() {
 function pcPlay() {
   randNum = Math.floor(Math.random() * 4 + 1);
   pc.push(randNum);
-  $(".b" + randNum).addClass("pressed").fadeIn(100).fadeOut(100).fadeIn(100);;
+  $(".b" + randNum).fadeIn(100).fadeOut(100).fadeIn(100);;
   console.log(pc);
 }
 
