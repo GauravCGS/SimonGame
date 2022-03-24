@@ -26,6 +26,8 @@ function game() {
     setTimeout(function() {
       bt.removeClass("pressed")
     }, 100);
+    var colorSound = new Audio("sounds/yellow.mp3");
+    colorSound.play();
     for (var i = 0; i < p1.length; i++) {
       if (pc[i] != p1[i]) {
         flag = 0;
