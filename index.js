@@ -14,10 +14,7 @@ $(document).keydown(function() {
 function pcPlay() {
   randNum = Math.floor(Math.random() * 4 + 1);
   pc.push(randNum);
-  $(".b" + randNum).addClass("pressed");
-  setTimeout(function() {
-    $(".b" + randNum).removeClass("pressed")
-  }, 500);
+  $(".b" + randNum).addClass("pressed").fadeIn(100).fadeOut(100).fadeIn(100);;
   console.log(pc);
 }
 
@@ -44,7 +41,9 @@ function game() {
       level++;
       $("#level-title").text("Level " + level);
       p1 = [];
-      pcPlay();
+      setTimeout(function() {
+        pcPlay();
+      }, 600);
     } else if (flag == 0) {
       console.log("Game Over");
       $("body").addClass("game-over");
