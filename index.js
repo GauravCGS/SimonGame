@@ -3,7 +3,7 @@ var randNum, level = 1;
 var pc = [];
 var p1 = [];
 
-$(document).keydown(function() {
+$(document).click(function() {
   $("#level-title").text("Level 1");
   pcPlay();
   $(document).unbind();
@@ -54,7 +54,7 @@ function game() {
       wrong.play();
       $(".btn").unbind();
       $("footer").text("Press any key to reload");
-      $(document).keydown(function() {
+      $(document).click(function() {
         location.reload();
       });
     }
