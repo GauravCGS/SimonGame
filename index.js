@@ -54,7 +54,7 @@ function game() {
       wrong.play();
       $(".btn").unbind();
       $("footer").text("Click to reload");
-      $(document).click(function() {
+      $(document).keydown(function() {
         location.reload();
       });
     }
