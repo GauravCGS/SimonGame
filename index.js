@@ -53,8 +53,8 @@ function game() {
       var wrong = new Audio("sounds/wrong.mp3");
       wrong.play();
       $(".btn").unbind();
-      $("footer").text("Click to reload");
-      $(document).keydown(function() {
+      $("footer").text("Click here to reload");
+      $("footer").click(function() {
         location.reload();
       });
     }
